@@ -4,7 +4,9 @@
 Web-application example to show [JavaScript](https://devdocs.io/javascript/) frontend and [Django framework](https://docs.djangoproject.com/en/4.1/intro/install/) backend interaction.
 <hr>
 <p> </p>
-:arrow_up: [to Quick start](README.md#Quick start)
+
+:arrow_down: [to Quick start](README.md#Quick-start)
+
 <p> </p>
 
 ## Техническое задание и реализация  
@@ -41,6 +43,7 @@ Web-application example to show [JavaScript](https://devdocs.io/javascript/) fro
 <br>
 
 ### Quick start
+
 Platform-depending options and libraries are adjusted to Windows.
 
 Clone repository 
@@ -78,7 +81,8 @@ Main page works at url http://127.0.0.1:8000/ - local host that server advises y
 [ChatBoard](http://127.0.0.1:8000/)
 <p> </p>
 <p> </p>
-:arrow_up: [to begin](README.md#Техническое задание и реализация)
+
+:arrow_up: [to begin](README.md#Техническое-задание-и-реализация)
 
 <br><br>
 Star ⭐️⭐️⭐️⭐️️⭐️ my project if you like it or think it is useful
