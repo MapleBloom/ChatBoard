@@ -4,6 +4,8 @@
 Web-application example to show [JavaScript](https://devdocs.io/javascript/) frontend and [Django framework](https://docs.djangoproject.com/en/4.1/intro/install/) backend interaction.
 <hr>
 <p> </p>
+:arrow_up: [to Quick start](README.md#Quick start)
+<p> </p>
 
 ## Техническое задание и реализация  
 <br>
@@ -36,6 +38,47 @@ Web-application example to show [JavaScript](https://devdocs.io/javascript/) fro
 
 *При выборе конкретного пользователя открывается форма для отправки личных сообщений. У получателя сообщения отображаются в общем чате с пометкой, что они персональные.*
 
+<br>
+
+### Quick start
+Platform-depending options and libraries are adjusted to Windows.
+
+Clone repository 
+```bash
+git clone https://github.com/MapleBloom/ChatBoard
+```
+
+At the upper ChatBoard directory create, start and adjust virtual environment
+```bash
+python -m venv venvCB
+venvCB\scripts\activate
+pip install -r requirements.txt
+```
+
+Generate Django secret-key
+```bash
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
+
+At the inner NewsPaper directory (project dir) add venv/settings.env file for private settings 
+```python
+SECRET_KEY = ''
+```  
+Create superuser
+```
+python manage.py createsuperuser
+``` 
+Start server
+```bash
+python manage.py runserver
+```
+
+Main page works at url http://127.0.0.1:8000/ - local host that server advises you at start message
+
+[ChatBoard](http://127.0.0.1:8000/)
+<p> </p>
+<p> </p>
+:arrow_up: [to begin](README.md#Техническое задание и реализация)
 
 <br><br>
 Star ⭐️⭐️⭐️⭐️️⭐️ my project if you like it or think it is useful
