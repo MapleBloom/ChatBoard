@@ -46,16 +46,9 @@ Web-application example to show [JavaScript](https://devdocs.io/javascript/) fro
 
 Platform-depending options and libraries are adjusted to Windows.
 
-Clone repository 
+Clone repository to ChatBoard_dir directory
 ```bash
 git clone https://github.com/MapleBloom/ChatBoard
-```
-
-At the upper ChatBoard directory create, start and adjust virtual environment
-```bash
-python -m venv venvCB
-venvCB\scripts\activate
-pip install -r requirements.txt
 ```
 
 Generate Django secret-key
@@ -63,14 +56,26 @@ Generate Django secret-key
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
 
-At the inner NewsPaper directory (project dir) add venv/settings.env file for private settings 
+At the inner prjchat directory (project dir) add venv/settings.env file for private settings 
 ```python
 SECRET_KEY = ''
 ```  
+
+At ChatBoard_dir directory, start and adjust virtual environment
+```bash
+python -m venv venvCB
+venvCB\scripts\activate
+cd .\ChatBoard\ 
+pip install -r requirements.txt
+```
+
+Mark ChatBoard directory as Sources root
+
 Create superuser
 ```
 python manage.py createsuperuser
 ``` 
+
 Start server
 ```bash
 python manage.py runserver
