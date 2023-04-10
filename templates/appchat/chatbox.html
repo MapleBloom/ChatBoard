@@ -10,8 +10,10 @@ Chat Room {{ room_name }}
             <form>
                 <div class="form-group">
                     <br>
+                    {% if user.profile.avatar %}
                     <img src="{{ user.profile.avatar.url }}" alt="Avatar" class="logo-image"
                         style="float: left; width: 50px; height: 50px; border-radius: 15px;">
+                    {% endif %}
                     <h3>Chatbox</h3><br>
 <!--                    <label for="exampleFormControlTextarea1" class="h4 pt-5"> </label>-->
                     <textarea class="form-control" id="chat-text" readonly rows="10"></textarea><br>
